@@ -8,7 +8,7 @@ Repositório **público** (`github.com/punkmetrics/skills`) com os Agent Skills 
 2. **Teste antes de publicar**, pelo método do skill `superpowers:writing-skills`:
    - rode o cenário sem o skill e anote o que o agente erra;
    - rode com o skill e confira que ele acerta.
-3. **Valide:** `claude plugin validate --strict .` (marketplace), `claude plugin validate --strict .claude-plugin/plugin.json` e `claude plugin validate --strict skills`.
+3. **Valide** (o código de saída tem que ser 0; não encadeie com `| tail`): `claude plugin validate --strict .` (marketplace), `claude plugin validate --strict .claude-plugin/plugin.json` e `claude plugin validate --strict skills`.
 4. **Versão:** suba `version` em `.claude-plugin/plugin.json` (semver; skill novo é minor) e registre no `CHANGELOG.md`.
 5. **Revisão do que é público:**
    - nenhum id interno, nome de cliente, link privado (Linear, Notion), caminho da máquina ou chave;
