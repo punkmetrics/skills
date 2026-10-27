@@ -48,16 +48,18 @@ Coloque no `.claude/settings.json` do repositório. Quem abrir o projeto no Clau
 
 ### Cópia dentro do projeto (qualquer agente)
 
-Com o CLI [`npx skills`](https://skills.sh), que copia os skills para o projeto e guarda de onde vieram:
+Com o CLI [`npx skills`](https://skills.sh), que copia os skills para o projeto e grava a origem no `skills-lock.json`:
 
 ```
-npx skills add punkmetrics/skills
+npx skills add punkmetrics/skills --agent claude-code --skill '*' --copy
 ```
 
-Para trazer as atualizações deste repositório:
+Troque `claude-code` pelo seu agente (`cursor`, `codex`…) ou use `'*'` para todos. Comite a pasta copiada (`.claude/skills/` no Claude Code) e o `skills-lock.json`: o time trabalha com a cópia, e o lock aponta para este repositório.
+
+Para trazer as atualizações deste repositório e comitar a cópia nova:
 
 ```
-npx skills update
+npx skills update --project
 ```
 
 ### Manual
