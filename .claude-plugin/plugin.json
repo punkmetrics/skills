@@ -1,0 +1,13 @@
+{
+  "name": "punkmetrics",
+  "version": "0.1.0",
+  "description": "Skills do método PunkMetrics para produto, analytics e growth: plano de eventos e arquitetura de tracking, implementação com o Atlas e documentação do catálogo de eventos.",
+  "author": {
+    "name": "PunkMetrics",
+    "url": "https://punkmetrics.com"
+  },
+  "homepage": "https://github.com/punkmetrics/skills",
+  "repository": "https://github.com/punkmetrics/skills",
+  "license": "MIT",
+  "keywords": ["analytics", "tracking-plan", "event-taxonomy", "data-contract", "posthog", "amplitude", "ga4", "gtm", "atlas", "punkmetrics"]
+}

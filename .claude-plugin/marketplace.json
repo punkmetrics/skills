@@ -1,0 +1,25 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "punkmetrics-skills",
+  "description": "Skills de agente do método PunkMetrics para design, produto, analytics e growth.",
+  "owner": {
+    "name": "PunkMetrics",
+    "url": "https://punkmetrics.com"
+  },
+  "plugins": [
+    {
+      "name": "punkmetrics",
+      "source": "./",
+      "description": "Plano de eventos e arquitetura de tracking, implementação com o Atlas e documentação do catálogo de eventos.",
+      "author": {
+        "name": "PunkMetrics",
+        "url": "https://punkmetrics.com"
+      },
+      "homepage": "https://github.com/punkmetrics/skills",
+      "repository": "https://github.com/punkmetrics/skills",
+      "license": "MIT",
+      "keywords": ["analytics", "tracking-plan", "event-taxonomy", "atlas", "punkmetrics"],
+      "category": "productivity"
+    }
+  ]
+}
